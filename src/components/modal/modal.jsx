@@ -1,32 +1,33 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import "./modal.css";
 
 const Modal = (props) => {
   const { showModal, modalCallBack, powerUm, powerDois, modalHero } = props;
   const [modalClasses, setModalClasses] = useState("modal-container");
 
-  const toggleModalVisibilite = () => {
+  
+
+  const toggleModalVisibility = useCallback(() => {
     return showModal
       ? setModalClasses("modal-container show-modal")
       : setModalClasses("modal-container");
-  };
+  }, [showModal])
 
   const toggleModal = () => {
     modalCallBack();
   };
 
   useEffect(() => {
-    toggleModalVisibilite();
-  }, [showModal]);
+    toggleModalVisibility();
+  }, [showModal, toggleModalVisibility]);
 
   function winner(powerUm, powerDois) {
-    let win = "";
     if (powerUm > powerDois) {
-      return (win = `Winner ${modalHero[0].name}`);
+      return (`Winner ${modalHero[0].name}`);
     } else if (powerUm < powerDois) {
-      return (win = `Winner ${modalHero[1].name}`);
+      return (`Winner ${modalHero[1].name}`);
     } else if (powerUm === powerDois) {
-      return (win = `${modalHero[0].name} e ${modalHero[1].name} Empataram !!`);
+      return (`${modalHero[0].name} e ${modalHero[1].name} Empataram !!`);
     }
   }
 
@@ -50,7 +51,6 @@ const Modal = (props) => {
           <div className="containerDuel">
             <ul id="camp1" className="modalCard">
               <li className="liGeral" key={modalHero[0].id}>
-                <div className="selectHero"></div>
                 <div className="heroesPhoto">
                   <img src={modalHero[0].images.sm} />
                 </div>
@@ -80,7 +80,6 @@ const Modal = (props) => {
             </div>
             <ul id="camp2" className="modalCard">
               <li className="liGeral" key={modalHero[1].id}>
-                <div className="selectHero"></div>
                 <div className="heroesPhoto">
                   <img src={modalHero[1].images.sm} />
                 </div>

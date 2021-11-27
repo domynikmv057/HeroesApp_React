@@ -1,8 +1,8 @@
 import "./App.css";
-import Heros from "./Componentes/hero/Heros";
+import Heroes from "./pages/hero/Heroes.jsx";
 
 function App() {
-  return <div className="App">{Heros()}</div>;
+  return <div className="App">{Heroes()}</div>;
 }
 
 export default App;

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import HeroCard from "../heroCard/HeroCard";
+import HeroCard from "../../components/heroCard/HeroCard.jsx";
 import "./hero.css";
-import Modal from "../modal/modal";
+import Modal from "../../components/modal/modal.jsx";
 
-function Heros() {
+function Heroes() {
   const [heroes, setHeroes] = useState([]);
   const [Loading, updateLoading] = useState(true);
   const [isError, updateError] = useState("");
@@ -51,7 +51,7 @@ function Heros() {
         updateError(isError.message);
         updateLoading(false);
       });
-  }, []);
+  }, [isError.message]);
 
   if (Loading) {
     return (
@@ -100,4 +100,4 @@ function Heros() {
     </div>
   );
 }
-export default Heros;
+export default Heroes;

@@ -6,7 +6,7 @@ function HeroCard(dadosApi, toggleModal) {
       className="liGeral"
       key={dadosApi.id}
     >
-      <div className="selectHero"></div>
+      <div className="selectHero" />
       <div className="heroesPhoto">
         <img src={dadosApi.images.sm} />
       </div>

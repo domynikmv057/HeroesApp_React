@@ -131,9 +131,3 @@ body#tinymce {
 body#tinymce {
   background: #ffffff;
 }
-
-.stickyIput {
-  position: -webkit-sticky; /* Safari */
-  position: sticky !important;
-  top: 0;
-}

@@ -1,5 +1,5 @@
 import Duelo from "./duelo";
-import AddClass from "./addClass";
+import AddClass from "./addClass.js";
 
 let duelListSectHero = [];
 function PonteService(selectHero, elemetHtml, toggleModal) {
