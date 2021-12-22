@@ -1,3 +1,33 @@
+<h1> Heroes Api </h1>
+
+<p> O projeto consiste em pegar inúmeros heróis de uma api, depois exibi-los em tela, ter um campo de pesquisa para poder selecionar heróis, e ao clicar em dois heróis, exibir qual foi o vencedor através de um modal. </p>
+
+<hr/>
+
+<h2> Minha experiência com o projeto </h2>
+<p>
+  Quando recebi este desafio fiquei simplesmente assutado, pensei que seria impossível, mas eu aprendi a tirar essa palavra do meu vocabulário, com tempo e esforços eu consigo aprender e esse projeto me mostrou isso, eu já tinha visto um pouco de react, mas foi a primeira vez que me desafiei a seguir um projeto de forma independente, foi desafiador, aprendi muito em apenas uma semana, o que me motivou ainda mais a continuar estudando esta ferramenta.
+</p>
+<hr/>
+
+<div align="center">
+    <h1> Imagens do projeto </h1><br/><br/><br/>
+    <h3>* Tela Inicial.</h3>
+    <img src="https://github.com/domynikmv057/HeroesApp_React/blob/master/repository_Readme/home1.png" width="100%" ><br/><br/><br/>
+    <img src="https://github.com/domynikmv057/HeroesApp_React/blob/master/repository_Readme/home2.png" width="100%" ><br/><br/><br/><br/>
+    <h3>* Filtro de busca por nome</h3>
+    <img src="https://github.com/domynikmv057/HeroesApp_React/blob/master/repository_Readme/busca1.png" width="100%" ><br/><br/><br/><br/>
+    <h3>* Efeito de hover </h3>
+    <img src="https://github.com/domynikmv057/HeroesApp_React/blob/master/repository_Readme/busca2.png" width="100%" ><br/><br/><br/><br/>
+    <h3>* Seleção para o duelo</h3>
+    <img src="https://github.com/domynikmv057/HeroesApp_React/blob/master/repository_Readme/sele%C3%A7%C3%A3o1.png" width="100%" ><br/><br/><br/><br/>
+    <img src="https://github.com/domynikmv057/HeroesApp_React/blob/master/repository_Readme/sele%C3%A7%C3%A3o2.png" width="100%" ><br/><br/><br/><br/>
+    <h3>* Modal com herói vencedor</h3>
+    <img src="https://github.com/domynikmv057/HeroesApp_React/blob/master/repository_Readme/modal1.png" width="100%" ><br/><br/><br/><br/>
+    <img src="https://github.com/domynikmv057/HeroesApp_React/blob/master/repository_Readme/modal2.png" width="100%" ><br/><br/><br/><br/>
+
+</div>
+<hr/>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
